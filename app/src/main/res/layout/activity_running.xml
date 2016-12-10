@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="runners.msband.runnerss.RunningActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="25"
+        android:textSize="35sp"
+        android:id="@+id/textdist"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="200dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/left_distance"
+        android:textSize="14sp"
+        android:id="@+id/leftDist"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="/"
+        android:textSize="35sp"
+        android:id="@+id/textView7"
+       android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/textdist"
+        android:layout_alignBottom="@+id/textdist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="35sp"
+        android:id="@+id/curdist"
+        android:layout_alignRight="@+id/textdist"
+        android:layout_alignEnd="@+id/textdist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textdist"
+        android:layout_alignBottom="@+id/textdist"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pulse"
+        android:id="@+id/textView2"
+        android:layout_marginTop="190dp"
+        android:layout_below="@+id/distance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/current_state_of_health"
+        android:id="@+id/textView3"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/distance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/temperature"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/gsr"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/line"
+        android:id="@+id/pulse"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/line"
+        android:id="@+id/temperature"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/pulse"
+        android:layout_alignStart="@+id/pulse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/line"
+        android:id="@+id/gsr"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignLeft="@+id/temperature"
+        android:layout_alignStart="@+id/temperature" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/button2"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:onClick="StopClick"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remTile"
+        android:id="@+id/removeTile"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:onClick="StopClick"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

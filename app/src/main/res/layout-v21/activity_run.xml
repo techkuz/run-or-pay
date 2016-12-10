@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    tools:context=".StartActivity"
+    android:backgroundTintMode="src_over">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set"
+        android:id="@+id/setbutton"
+        android:enabled="true"
+        android:textSize="17sp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/check"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="SetChallengeClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:ems="10"
+        android:id="@+id/distance"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHint="@android:color/holo_red_light"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:imeOptions="actionSearch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_expected_distance"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pulse"
+        android:id="@+id/textView2"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/distance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/current_state_of_health"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/distance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/temperature"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/gsr"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" /> -->
+    <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/line"
+                android:id="@+id/pulse"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_marginLeft="71dp"
+                android:layout_marginStart="71dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/line"
+                android:id="@+id/temperature"
+                android:layout_above="@+id/textView5"
+                android:layout_alignLeft="@+id/pulse"
+                android:layout_alignStart="@+id/pulse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/line"
+                android:id="@+id/gsr"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_alignLeft="@+id/temperature"
+                android:layout_alignStart="@+id/temperature" />
+    -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:id="@+id/check"
+        android:enabled="true"
+        android:textSize="17sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="ConnectClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/km"
+        android:id="@+id/textView6"
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/distance"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/distance"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/complete"
+        android:id="@+id/textView8"
+        android:textSize="14sp"
+        android:layout_below="@+id/setbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
