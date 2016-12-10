@@ -21,3 +21,5 @@ You set a challenge
 The project was created for the poster session of Microsoft Research Summer School on Internet of Things (held at Kazan July 2016).  
 
 #### Save your health and money ;)  
+
+![alt text](https://github.com/vJenny/run-or-pay/blob/master/L-1vf0DEJvM.jpg "Scheme")
